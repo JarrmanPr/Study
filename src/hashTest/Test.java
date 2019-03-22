@@ -1,6 +1,4 @@
-﻿package hashtest;
-
-// new line
+package hashtest;
 
 //import java.util.Objects;
 
