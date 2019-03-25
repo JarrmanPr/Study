@@ -2,28 +2,24 @@ class MyThread implements Runnable {
     
     Thread t;
     String name;
-    boolean isActive;
-    int counter = 0;
+    double x;
+    double mas[][];
      
-    MyThread(String threadName) {
+    MyThread(String threadName, double el[][]) {
         name = threadName;
+        mas = el;
         t = new Thread(this, name);
         t.setPriority(6);
-        isActive = true;
         t.start();
     }
-    
-    void disable(){
-        isActive = false;
-    }
-    
+
     public void run() {
-        int i = 0;
         System.out.printf("%s started... \n", Thread.currentThread().getName());
-      
-        while(i < 10) {
-            counter++;
-            i++;
+
+        for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < 2; j++) {
+                x += mas[i][j];
+            }
         }
         System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
@@ -33,22 +29,27 @@ class MyThread2 implements Runnable {
     
     Thread t;
     String name;
-    int x = 0;
+    double x;
+    double mas[][];
+
      
-    MyThread2(String threadName) {
+    MyThread2(String threadName, double el[][]) {
         name = threadName;
+        mas = el;
         t = new Thread(this, name);
         t.start();
     }
     
     public void run() {
-        int i = 0;
+
         
         System.out.printf("%s started... \n", Thread.currentThread().getName());
-      
-        while(i < 10) {
-            x += 1;
-            i++;
+
+        for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < 2; j++) {
+                if(x > mas[i][j])
+                    x = mas[i][j];
+            }
         }
         System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
@@ -56,10 +57,16 @@ class MyThread2 implements Runnable {
 
 public class ThreadTests {
     public static void main(String[] args) {
+        double elements[][] = { {0.6, 18,3},
+                {5.4, 14,8},
+                {-0.25, 87,4},
+                {11.3, 17.9},
+                {96.5, 39.7},
+                {-12.9, 4.3}};
         
         System.out.println("Main thread started...");
-        MyThread myThread = new MyThread("Child");
-        MyThread2 myThread2 = new MyThread2("Child2");
+        MyThread myThread = new MyThread("Child", elements);
+        MyThread2 myThread2 = new MyThread2("Child2", elements);
         
         try {
             myThread.t.join();
@@ -71,9 +78,8 @@ public class ThreadTests {
              
         System.out.println("Main thread finished...");
         
-        System.out.println(myThread.counter);
+        System.out.println(myThread.x);
         System.out.println(myThread2.x);
-        int a = myThread.counter + myThread2.x;
-        System.out.println(a);
+
     }
 }

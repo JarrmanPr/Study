@@ -2,9 +2,9 @@ package threadTest;
 
 class MyQueue {
     int n;
-    boolean valueSet = true;
+    boolean valueSet = false;
 
-    synchronized int get() {
+    synchronized int get() { // Consumer
         while(!valueSet) {
             try {
                 wait();
@@ -19,7 +19,7 @@ class MyQueue {
         return n;
     }
 
-    synchronized void put(int n) {
+    synchronized void put(int n) { // Producer
         while(valueSet) {
             try {
                 wait();
