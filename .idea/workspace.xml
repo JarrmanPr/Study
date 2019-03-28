@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415be6d0-445b-4fa9-a1d2-4ec631396a1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Study/threadTest/MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Study/threadTest/MyQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/threadTest/ThreadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadTest/ThreadTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/threadTest/WaitNotifyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadTest/WaitNotifyTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +24,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="18" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTask.java">
+        <entry file="file://$PROJECT_DIR$/src/utilConcurrentTest/ExecutorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="336">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
               <folding>
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#2686#2702#0" expanded="true" />
+                <element signature="e#2435#2451#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +94,10 @@
         <option value="$PROJECT_DIR$/src/threadTest/Synch.java" />
         <option value="$PROJECT_DIR$/src/threadTest/WaitNotifyTest.java" />
         <option value="$PROJECT_DIR$/src/threadTest/ThreadTests.java" />
+        <option value="$PROJECT_DIR$/src/threadTest/ExecutorCallableTest.java" />
         <option value="$PROJECT_DIR$/src/threadTest/ThreadTask.java" />
+        <option value="$PROJECT_DIR$/src/utilConcurrentTest/ExecutorCallableTest.java" />
+        <option value="$PROJECT_DIR$/src/utilConcurrentTest/ExecutorTest.java" />
       </list>
     </option>
   </component>
@@ -151,6 +163,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="traininfo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utilConcurrentTest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -159,7 +177,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553514865716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553782663256" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
@@ -176,13 +194,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadTask">
-    <configuration name="NoSynch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadTest.NoSynch" />
+  <component name="RunManager" selected="Application.ExecutorTest">
+    <configuration name="ExecutorCallableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utilConcurrentTest.ExecutorCallableTest" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadTest.*" />
+          <option name="PATTERN" value="utilConcurrentTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,12 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Synch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadTest.Synch" />
+    <configuration name="ExecutorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utilConcurrentTest.ExecutorTest" />
       <module name="Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadTest.*" />
+          <option name="PATTERN" value="utilConcurrentTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -238,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadTask" />
+        <item itemvalue="Application.ExecutorTest" />
         <item itemvalue="Application.ThreadTests" />
+        <item itemvalue="Application.ExecutorCallableTest" />
+        <item itemvalue="Application.ThreadTask" />
         <item itemvalue="Application.WaitNotifyTest" />
-        <item itemvalue="Application.NoSynch" />
-        <item itemvalue="Application.Synch" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +289,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19660194" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20631067" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,7 +298,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32410613" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27450982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,22 +498,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTests.java">
+    <entry file="file://$PROJECT_DIR$/src/threadTest/ExecutorCallableTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/utilConcurrentTest/ExecutorCallableTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTask.java">
+    <entry file="file://$PROJECT_DIR$/src/threadTest/ThreadTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="198">
+          <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilConcurrentTest/ExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
           <folding>
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#2686#2702#0" expanded="true" />
+            <element signature="e#2435#2451#0" expanded="true" />
           </folding>
         </state>
       </provider>
